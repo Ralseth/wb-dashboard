@@ -1,5 +1,25 @@
-# Vue 3 + Vite
+# WB-Dashboard
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+SPA-дашборд для продавца Wildberries  
+Vue 3 + TypeScript + Element Plus + ECharts
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+| Страница | Данные | Что есть |
+|----------|--------|----------|
+| **Incomes** | /api/incomes | график `quantity`, таблица, фильтры, пагинация |
+| **Orders**  | /api/orders  | график `forPay` |
+| **Sales**   | /api/sales   | график `forPay` |
+| **Stocks**  | /api/stocks  | график `quantity` (остатки на сегодня) |
+
+### Демо
+
+<https://wb-dashboard-one.vercel.app>
+
+### Быстрый старт локально
+
+```bash
+git clone https://github.com/Ralseth/wb-dashboard.git
+cd wb-dashboard
+
+cp .env.example .env      # вставьте реальный API-ключ
+npm i                     # установка зависимостей
+npm run dev               # запуск на http://localhost:5173
