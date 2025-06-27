@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    /* базовые опции */
+    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": false,          // можно true, если планируете строгий TS
+    "jsx": "preserve",
+
+    /* главное: алиас @ -> src */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* чтобы не ругался на import.meta.env */
+    "types": ["vite/client"]
+  },
+  "exclude": ["node_modules", "dist"]
+}
